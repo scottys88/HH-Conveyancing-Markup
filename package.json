@@ -1,0 +1,12 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Markup for HH Conveyancing website",
+  "dependencies": {
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1"
+  }
+}
