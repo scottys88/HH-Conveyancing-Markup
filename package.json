@@ -3,6 +3,7 @@
   "version": "",
   "description": "Markup for HH Conveyancing website",
   "dependencies": {
+    "bootstrap": "^4.1.3",
     "gulp-sass": "^4.0.2"
   },
   "devDependencies": {
