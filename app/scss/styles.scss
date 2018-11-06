@@ -1,6 +1,45 @@
+@import './variables';
 
+body.HoutermansHorner {
+    background-color: $black;
+    color: $white;
+}
 
-body {
-    font-size: 25px;
-    
+.header {
+    .header__logo__wrapper {
+        padding-top: 50px;
+        .header__logo {
+
+        }
+    }
+    .header__home-intro {
+        padding: 50px 0;
+        .intro-title {
+            font-size: 50px;
+        }
+        .intro-para {
+            font-size: 25px;
+        }
+    }
+    .header__home__page-description {
+        padding: 100px 0;
+    }
+}
+.cropped-image-top-right {
+    img {
+        position: absolute;
+        top: -10%;
+        right: -10%;
+    }
+    img:after {
+        width: 1000px;
+        height: 1000px;
+        content: '';
+        background-color: $black;
+        left: 0;
+    }
+}
+
+.header__menu {
+    display: none;
 }

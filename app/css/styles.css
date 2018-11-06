@@ -1,2 +1,51 @@
-body {
-  font-size: 25px; }
+h1 {
+  font-size: 50px; }
+
+.button {
+  font-size: 1.2rem;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 600; }
+  .button.button--outline-on-black {
+    color: #99DBEC;
+    padding: 10px 20px;
+    border: 1px solid #99DBEC;
+    border-radius: 10px;
+    transition: all 0.25s; }
+  .button.button--outline-on-black:hover {
+    color: #000;
+    background-color: #99DBEC;
+    transition: all 0.25s; }
+
+body.HoutermansHorner {
+  background-color: #000;
+  color: #fff; }
+
+.header .header__logo__wrapper {
+  padding-top: 50px; }
+
+.header .header__home-intro {
+  padding: 50px 0; }
+  .header .header__home-intro .intro-title {
+    font-size: 50px; }
+  .header .header__home-intro .intro-para {
+    font-size: 25px; }
+
+.header .header__home__page-description {
+  padding: 100px 0; }
+
+.cropped-image-top-right img {
+  position: absolute;
+  top: -10%;
+  right: -10%; }
+
+.cropped-image-top-right img:after {
+  width: 1000px;
+  height: 1000px;
+  content: '';
+  background-color: #000;
+  left: 0; }
+
+.header__menu {
+  display: none; }

@@ -1,0 +1,34 @@
+$black: #000;
+$white: #fff;
+$hhblue: #99DBEC;
+
+body {
+
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.button {
+    font-size: 1.2rem;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 600;
+    &.button--outline-on-black {
+        color: $hhblue;
+        padding: 10px 20px;
+        border: 1px solid $hhblue;
+        border-radius: 10px;
+        transition: all 0.25s;
+    }
+    &.button--outline-on-black:hover {
+        color: $black;
+        background-color: $hhblue;
+        transition: all 0.25s;
+    }
+    &.button--on-white {
+
+    }
+}

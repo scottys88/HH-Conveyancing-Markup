@@ -10,14 +10,14 @@ gulp.task('serve', ['sass'], function() {
     });
 
     gulp.watch("app/scss/*.scss", ['sass']);
-    gulp.watch("app/*.html").on('change', browserSync.reload);
+    gulp.watch("app/*.html", "app/*.scss", "app/*.js").on('change', browserSync.reload);
 });
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
     return gulp.src("app/scss/*.scss")
         .pipe(sass())
-        .pipe(gulp.dest("app/style.css"))
+        .pipe(gulp.dest("app/css"))
         .pipe(browserSync.stream());
 });
 
